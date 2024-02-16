@@ -74,20 +74,22 @@
                             <img src="images/rectangle.png" class="h-full" />
                         </figure>
                         <div class="card-body items-center text-center px-2 w-full">
-                            <h2 class="card-title">Rectangle</h2>
+                            <h2 class="card-title" id="recname">Rectangle</h2>
                             <p>Area (A) = w X l</p>
                             <div class="flex gap-4 items-center">
                                 <div class="flex gap-2 items-center">
-                                    <input type="number" placeholder="width" class="bg-[#F1F1F1] w-14">
+                                    <input id="rwidth" type="number" placeholder="width" class="bg-[#F1F1F1] w-14">
                                     <p>cm</p>
                                 </div>
                                 <div class="flex items-center">
-                                    <input type="number" placeholder="length" class="bg-[#F1F1F1] w-14">
+                                    <input id="rlength" type="number" placeholder="length" class="bg-[#F1F1F1] w-14">
                                     <p>cm</p>
                                 </div>
                             </div>
+                            <p id="recarea" class="text-xl font-extrabold"></p>
                             <div class="w-full">
-                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                                <button onclick="rectangleArea()"
+                                    class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -193,7 +195,9 @@
         </section>
     </main>
 
-    <script src="Scripts/calculate.js"></script>
+    <script src="Scripts/reuseableFunction.js"></script>
+    <script src="Scripts/triangleCalculate.js"></script>
+    <script src="Scripts/Rectangle.js"></script>
 
 </body>
 
