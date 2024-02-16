@@ -10,6 +10,203 @@
 </head>
 
 <body>
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl">Geometry Genius</a>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-16 md:w-auto" />
+                </div>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="Geometry Genius Logo"
+                                src="https://img.freepik.com/premium-vector/geometry-flat-vector-icon_9206-489.jpg" />
+                        </div>
+                    </div>
+                    <ul tabindex="0"
+                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Solve Geometry
+                                <span class="badge">New Geometry</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <div class="flex">
+            <section class="flex-1">
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/triangle.png" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Triangle</h2>
+                            <p>Area (A) = 0.5 X b X h</p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="base" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="height" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/rectangle.png" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Rectangle</h2>
+                            <p>Area (A) = w X l</p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="width" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="length" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/parallelogram.png" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Parallelogram</h2>
+                            <p>Area (A) = b X h</p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="base" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="height" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/rhombus.png" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Rhombus</h2>
+                            <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="d1" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="d2" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/pentagon.png" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Pentagon</h2>
+                            <p>Area (A) = 0.5 X p X b</p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="p" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="b" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/ellipse.png" class="bg-[#D9D9D9]" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Ellipse</h2>
+                            <p>Area (A) = PIab</p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="a" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="b" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div class="card w-52 bg-base-100 shadow-xl">
+                        <figure class="p-2">
+                            <img src="images/ellipse.png" class="bg-[#D9D9D9]" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Ellipse</h2>
+                            <p>Area (A) = PIab</p>
+                            <div class="flex gap-4 items-center">
+                                <div class="flex gap-2 items-center">
+                                    <input type="number" placeholder="a" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="number" placeholder="b" class="bg-[#F1F1F1] w-16">
+                                    <p>cm</p>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
 </body>
 
