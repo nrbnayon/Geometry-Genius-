@@ -98,20 +98,22 @@
                             <img src="images/parallelogram.png" class="h-full" />
                         </figure>
                         <div class="card-body items-center text-center px-2 w-full">
-                            <h2 class="card-title">Parallelogram</h2>
+                            <h2 class="card-title" id="pname">Parallelogram</h2>
                             <p>Area (A) = b X h</p>
                             <div class="flex gap-4 items-center">
                                 <div class="flex gap-2 items-center">
-                                    <input type="number" placeholder="base" class="bg-[#F1F1F1] w-14">
+                                    <input id="pbase" type="number" placeholder="base" class="bg-[#F1F1F1] w-14">
                                     <p>cm</p>
                                 </div>
                                 <div class="flex items-center">
-                                    <input type="number" placeholder="height" class="bg-[#F1F1F1] w-14">
+                                    <input id="phight" type="number" placeholder="height" class="bg-[#F1F1F1] w-14">
                                     <p>cm</p>
                                 </div>
                             </div>
+                            <p id="parallarea" class="text-base font-extrabold"></p>
                             <div class="w-full">
-                                <button class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
+                                <button onclick="parallelogramArea()" id="btn-add-item"
+                                    class="btn btn-primary bg-[#1090D8] border-none w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -184,12 +186,16 @@
                 </div>
             </div>
             <div>
-                <div>
-                    <div class="card w-full md:w-52  bg-base-100 shadow-xl">
-                        <h3 class="text-base md:text-xl text-center font-extrabold underline underline-offset-8">Area
-                            Calculation
-                        </h3>
-                    </div>
+                <div class="card w-full md:w-52 min-h-screen  bg-base-100 shadow-xl">
+                    <h3 class="text-base md:text-xl text-center font-extrabold underline underline-offset-8">Area
+                        Calculation
+                    </h3>
+                    <section class="card p-4">
+                        <ol id="list-container" class=" list-decimal">
+
+                        </ol>
+                    </section>
+
                 </div>
             </div>
         </section>
@@ -198,6 +204,7 @@
     <script src="Scripts/reuseableFunction.js"></script>
     <script src="Scripts/triangleCalculate.js"></script>
     <script src="Scripts/Rectangle.js"></script>
+    <script src="Scripts/Parallelogram.js"></script>
 
 </body>
 
